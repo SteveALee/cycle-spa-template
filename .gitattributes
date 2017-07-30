@@ -1,0 +1,42 @@
+# See https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
+# Set the default behavior for the project regardless of user settings
+# Use Git for Windows' "file" to check end of line status
+
+# Note this interacts with .editorConfig.
+# Turn off all line tansformation as text=auto + eol=lf not possible
+# Default to not perform any LF processing at all
+* -text
+
+# Explicitly declare text files you want to always be normalized in repository
+# and converted to LF line endings on checkout.
+# see "npm run lsTextTypes"
+*.txt eol=lf
+*.md eol=lf
+*.js eol=lf
+*.jsx eol=lf
+*.ts eol=lf
+*.tsx eol=lf
+*.json eol=lf
+*.ejs eol=lf
+*.css eol=lf
+*.scss eol=lf
+*.html eol=lf
+LICENCE eol=lf
+NOTICE eol=lf
+CODE_OF_CONDUCT eol=lf
+*.yml eol=lf
+
+# Declare files that will always have CRLF line endings on checkout.
+# see "npm run lsCRLF"
+*.sln eol=crlf
+*.njsproj eol=crlf
+
+# Denote all files that are truly binary and should not be normalised or diffed.
+# see "npm run lsBinary"
+*.png binary
+*.jpg binary
+*.pdf binary
+*.bmpr binary
+*.ico binary
+*.pdf binary
+*.bmpr binary
