@@ -15,7 +15,7 @@ declare type StorageifyOptions = {
 }
 
 const main: Component = onionify(
-    storageify(App, { key: 'brian-state' } as StorageifyOptions)
+    storageify(App, { key: 'cycle-spa-state' } as StorageifyOptions)
 )
 
 /// #if PRODUCTION
